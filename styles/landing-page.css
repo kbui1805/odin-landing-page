@@ -1,0 +1,229 @@
+:root {
+    --dark-bg-color: #1F2937;
+    --h1-size: 48px;
+    --h1-weight: extra-bold;
+    --h1-color: #F9FAF8;
+    --h2-size: 18px;
+    --h2-color: #E5E7EB;
+    --logo-text-size: 24px;
+    --logo-text-color: #F9FAF8;
+    --button-bg-color: #3882F6;
+    --info-header-size: 36px;
+    --info-header-weight: extra-bold;
+    --info-header-color: #1F2937;
+    --quote-size: 36px;
+    --quote-bg-color: #E5E7EB;
+    --quote-color: #1F2937;
+    --quote-weight: light;
+    --quote-style: italic;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 0; */
+    margin: 0;
+    
+}
+
+header,
+footer {
+    width: 100vw;
+    height: 50px;
+    flex: 0 1 auto;
+    background-color: var(--dark-bg-color);
+}
+
+main {
+    width: 100vw;
+    flex: 1 1 auto;
+    /* padding: 0 15vw; */
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 15vw 8px 15vw;
+}
+
+.navigation .logo {
+    font-size: var(--logo-text-size);
+    color: var(--logo-text-color);
+    flex: 1;
+    margin-right: auto;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    gap: 24px;
+}
+
+.navigation li a {
+    color: var(--h2-color);
+    font-size: var(--h2-size);
+}
+
+.hero-description h1{
+    font-size: var(--h1-size);
+    color: var(--h1-color);
+    font-weight: var(--h1-weight);
+    margin: 0;
+}
+
+.hero-description p {
+    font-size: var(--h2-size);
+    color: var(--h2-color);
+    
+}
+
+.hero-description button {
+    background-color: var(--button-bg-color);
+    padding: 8px 42px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    font-weight: medium;
+    border-width: 0px;
+}
+
+.hero {
+    background-color: var(--dark-bg-color);
+    padding: 80px 15vw;
+    display: flex;
+}
+
+.hero div {
+    flex: 1;
+}
+
+.hero .hero-description {
+    padding-right: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: baseline;
+    justify-content: space-around;
+    gap: 8px;
+}
+
+.hero .hero-image {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image div {
+    text-align: center;
+    color: white;
+}
+
+.random-info-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 48px 15vw 80px 15vw;
+    gap: 48px;
+}
+
+.random-info-container h2 {
+    text-align: center;
+    font-size: var(--info-header-size);
+    font-weight: var(--info-header-weight);
+    color: var(--info-header-color);
+}
+
+.random-info-box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.random-info-card {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+    gap: 16px;
+}
+
+.random-info-card div {
+    flex: 0 1 auto;
+    width: 160px;
+    height: 160px;
+    border-radius: 12px;
+    border: 4px solid var(--button-bg-color);
+}
+
+.random-info-card p {
+    margin: 0;
+    text-align: center;
+    padding: 0 16px;
+
+}
+
+.quote-container {
+    display: flex;
+    background-color: var(--quote-bg-color);
+    padding: 80px 15vw;
+    flex-flow: column nowrap;
+    align-items: stretch;
+}
+
+.quote-container p {
+    padding: 0;
+    margin: 0;
+}
+
+.quote-container .quote-main {
+    color: var(--quote-color);
+    font-size: var(--quote-size);
+    font-style: var(--quote-style);
+    font-weight: lighter;
+    /* padding: 20px; */
+}
+
+.quote-author {
+    text-align: right;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+footer {
+    display: flex;
+    color: var(--h1-color);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+}
